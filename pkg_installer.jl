@@ -1,7 +1,7 @@
 function initialize_package_array(package_list)
 	println("\nOpening, parsing, sorting, and making package list array.\n")
 	Unsorted_Package_List = ASCIIString[]
-	Intermediart_Package_List = ASCIIString[]
+	Intermediary_Package_List = ASCIIString[]
 	file = open(package_list);
 	Intermediary_Package_List = readdlm(file, ASCIIString)
 
