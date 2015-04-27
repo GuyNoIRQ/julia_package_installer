@@ -1,9 +1,9 @@
-function initialize_package_array(package_list)
+function initialize_package_array(Package_List)
 	println("\nOpening, parsing, sorting, and making package list array.\n")
 	Unsorted_Package_List = ASCIIString[]
 	Intermediary_Package_List = ASCIIString[]
-	file = open(package_list);
-	Intermediary_Package_List = readdlm(file, ASCIIString)
+	File = open(Package_List);
+	Intermediary_Package_List = readdlm(File, ASCIIString)
 
 	for i in Intermediary_Package_List
 		push!(Unsorted_Package_List, i)
